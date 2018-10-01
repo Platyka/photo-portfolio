@@ -1,11 +1,16 @@
 <template>
   <div class="full-image">
-    <img :src="clickedImage" alt="" class="full-image__img">
+    <img :src="clickedImage" alt="" class="full-image__img" @load="loadFinished = !loadFinished" v-show="loadFinished">
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      loadFinished: false
+    }
+  },
   props: ['clickedImage']
 }
 </script>
