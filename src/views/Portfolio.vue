@@ -14,37 +14,37 @@
 </template>
 
 <script>
-import GalleryGrid from "../components/gallery/GalleryGrid";
-import GalleryElement from "../components/gallery/GalleryElement";
-import FullResImage from "../components/gallery/FullResImage";
-import Backdrop from "../components/Backdrop.vue";
+import GalleryGrid from '../components/gallery/GalleryGrid'
+import GalleryElement from '../components/gallery/GalleryElement'
+import FullResImage from '../components/gallery/FullResImage'
+import Backdrop from '../components/Backdrop.vue'
 export default {
-  data() {
+  data () {
     return {
       images: [
-        {id: 1, imgUrl: require("../assets/images/portfolio/desktop/1_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/1.jpg")},
-        {id: 2, imgUrl: require("../assets/images/portfolio/desktop/2_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/2.jpg")},
-        {id: 3, imgUrl: require("../assets/images/portfolio/desktop/3_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/3.jpg")},
-        {id: 4, imgUrl: require("../assets/images/portfolio/desktop/4_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/4.jpg")},
-        {id: 5, imgUrl: require("../assets/images/portfolio/desktop/5_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/5.jpg")},
-        {id: 6, imgUrl: require("../assets/images/portfolio/desktop/6_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/6.jpg")},
-        {id: 7, imgUrl: require("../assets/images/portfolio/desktop/7_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/7.jpg")},
-        {id: 8, imgUrl: require("../assets/images/portfolio/desktop/8_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/8.jpg")},
-        {id: 9, imgUrl: require("../assets/images/portfolio/desktop/9_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/9.jpg")},
-        {id: 10, imgUrl: require("../assets/images/portfolio/desktop/10_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/10.jpg")},
-        {id: 11, imgUrl: require("../assets/images/portfolio/desktop/11_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/11.jpg")},
-        {id: 12, imgUrl: require("../assets/images/portfolio/desktop/12_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/12.jpg")},
-        {id: 13, imgUrl: require("../assets/images/portfolio/desktop/13_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/13.jpg")},
-        {id: 14, imgUrl: require("../assets/images/portfolio/desktop/14_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/14.jpg")},
-        {id: 15, imgUrl: require("../assets/images/portfolio/desktop/15_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/15.jpg")},
-        {id: 16, imgUrl: require("../assets/images/portfolio/desktop/16_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/16.jpg")},
-        {id: 17, imgUrl: require("../assets/images/portfolio/desktop/17_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/17.jpg")},
-        {id: 18, imgUrl: require("../assets/images/portfolio/desktop/18_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/18.jpg")},
-        {id: 19, imgUrl: require("../assets/images/portfolio/desktop/19_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/19.jpg")},
-        {id: 20, imgUrl: require("../assets/images/portfolio/desktop/20_thumbnail.jpg"), fullRes: require("../assets/images/portfolio/desktop/20.jpg")}
+        { id: 1, imgUrl: require('../assets/images/portfolio/desktop/1_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/1.jpg') },
+        { id: 2, imgUrl: require('../assets/images/portfolio/desktop/2_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/2.jpg') },
+        { id: 3, imgUrl: require('../assets/images/portfolio/desktop/3_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/3.jpg') },
+        { id: 4, imgUrl: require('../assets/images/portfolio/desktop/4_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/4.jpg') },
+        { id: 5, imgUrl: require('../assets/images/portfolio/desktop/5_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/5.jpg') },
+        { id: 6, imgUrl: require('../assets/images/portfolio/desktop/6_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/6.jpg') },
+        { id: 7, imgUrl: require('../assets/images/portfolio/desktop/7_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/7.jpg') },
+        { id: 8, imgUrl: require('../assets/images/portfolio/desktop/8_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/8.jpg') },
+        { id: 9, imgUrl: require('../assets/images/portfolio/desktop/9_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/9.jpg') },
+        { id: 10, imgUrl: require('../assets/images/portfolio/desktop/10_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/10.jpg') },
+        { id: 11, imgUrl: require('../assets/images/portfolio/desktop/11_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/11.jpg') },
+        { id: 12, imgUrl: require('../assets/images/portfolio/desktop/12_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/12.jpg') },
+        { id: 13, imgUrl: require('../assets/images/portfolio/desktop/13_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/13.jpg') },
+        { id: 14, imgUrl: require('../assets/images/portfolio/desktop/14_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/14.jpg') },
+        { id: 15, imgUrl: require('../assets/images/portfolio/desktop/15_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/15.jpg') },
+        { id: 16, imgUrl: require('../assets/images/portfolio/desktop/16_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/16.jpg') },
+        { id: 17, imgUrl: require('../assets/images/portfolio/desktop/17_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/17.jpg') },
+        { id: 18, imgUrl: require('../assets/images/portfolio/desktop/18_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/18.jpg') },
+        { id: 19, imgUrl: require('../assets/images/portfolio/desktop/19_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/19.jpg') },
+        { id: 20, imgUrl: require('../assets/images/portfolio/desktop/20_thumbnail.jpg'), fullRes: require('../assets/images/portfolio/desktop/20.jpg') }
       ],
       showImage: false,
-      currentImage: ""
+      currentImage: ''
     }
   },
   components: {
@@ -54,9 +54,9 @@ export default {
     appFullResImage: FullResImage
   },
   methods: {
-    clickedImage(url) {
-      this.showImage = true; 
-      this.currentImage = url;
+    clickedImage (url) {
+      this.showImage = true
+      this.currentImage = url
     }
   }
 }

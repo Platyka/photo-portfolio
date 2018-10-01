@@ -11,26 +11,26 @@
 </template>
 
 <script>
-import NavBar from "./components/navigation/NavBar.vue";
-import SideNav from "./components/navigation/SideNav.vue";
-import Backdrop from "./components/Backdrop.vue";
+import NavBar from './components/navigation/NavBar.vue'
+import SideNav from './components/navigation/SideNav.vue'
+import Backdrop from './components/Backdrop.vue'
 export default {
-  data() {
+  data () {
     return {
       showSideNav: false
     }
   },
   computed: {
-    showNav() {
-      return this.$route.path==="/portfolio" || this.$route.path==="/about" || this.$route.path==="/contact";
+    showNav () {
+      return this.$route.path === '/portfolio' || this.$route.path === '/about' || this.$route.path === '/contact'
     }
   },
   methods: {
-    slideSideNav(data) {
-      this.showSideNav = data;
+    slideSideNav (data) {
+      this.showSideNav = data
     },
-    closeSideNav() {
-      this.showSideNav = false;
+    closeSideNav () {
+      this.showSideNav = false
     }
   },
   components: {
@@ -40,7 +40,6 @@ export default {
   }
 }
 </script>
-
 
 <style lang="scss">
 *,*::after, *::before {

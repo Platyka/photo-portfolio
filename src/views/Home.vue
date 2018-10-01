@@ -11,7 +11,7 @@
     height: 100%;
     width: 100%;
     display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                       url("../assets/images/backgrounds/main_mobile.jpg");
     background-size: cover;
     background-position: center;
@@ -21,7 +21,7 @@
     justify-content: center;
     color: #fff;
     @media screen and (min-width: 1024px) {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                         url("../assets/images/backgrounds/main_desktop.jpg");
     }
     &__title {
@@ -60,4 +60,3 @@
     }
   }
 </style>
-

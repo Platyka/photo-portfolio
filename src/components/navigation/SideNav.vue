@@ -5,7 +5,7 @@
       <router-link tag="li" class="sidenav__item" to="/about" active-class="sidenav__active"><a class="sidenav__link">About me</a></router-link>
       <router-link tag="li" class="sidenav__item" to="/contact" active-class="sidenav__active"><a class="sidenav__link">Contact</a></router-link>
     </ul>
-  </nav>  
+  </nav>
 </template>
 
 <style lang="scss" scoped>

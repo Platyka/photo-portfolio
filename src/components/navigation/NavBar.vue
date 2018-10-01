@@ -18,27 +18,26 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       windowWidth: window.innerWidth,
       menuClicked: false
     }
   },
   methods: {
-    menuClick() {
-      this.menuClicked = true;
-      this.$emit('menuWasClicked', this.menuClicked);
-      console.log(this.menuClicked);
+    menuClick () {
+      this.menuClicked = true
+      this.$emit('menuWasClicked', this.menuClicked)
+      console.log(this.menuClicked)
     }
   },
-  mounted() {
+  mounted () {
     window.addEventListener('resize', (event) => {
-      this.windowWidth = event.target.innerWidth;
+      this.windowWidth = event.target.innerWidth
     })
   }
 }
 </script>
-
 
 <style lang="scss" scoped>
   .nav {

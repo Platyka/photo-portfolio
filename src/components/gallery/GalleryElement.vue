@@ -2,7 +2,7 @@
   <div class="gallery-element" :class="'gallery-element--' + source.id">
     <img :src="source.imgUrl" alt="" class="gallery-element__image">
     <i class="fas fa-search-plus gallery-element__icon"></i>
-  </div>  
+  </div>
 </template>
 
 <script>
@@ -10,7 +10,6 @@ export default {
   props: ['source']
 }
 </script>
-
 
 <style lang="scss" scoped>
 .gallery-element {
